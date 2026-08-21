@@ -1,0 +1,39 @@
+VCD info: dumpfile elevator.vcd opened for output.
+
+---------------------------------------
+TEST 1: Floor 1 -> Floor 4
+---------------------------------------
+Time=0 ns   | Reset=1 | Request=1 | Current=1 | UP=0 | DOWN=0 | DOOR=0
+Time=20 ns  | Reset=0 | Request=4 | Current=1 | UP=1 | DOWN=0 | DOOR=0
+Time=35 ns  | Reset=0 | Request=4 | Current=2 | UP=1 | DOWN=0 | DOOR=0
+Time=45 ns  | Reset=0 | Request=4 | Current=3 | UP=1 | DOWN=0 | DOOR=0
+Time=55 ns  | Reset=0 | Request=4 | Current=4 | UP=0 | DOWN=0 | DOOR=1
+
+---------------------------------------
+TEST 2: Floor 4 -> Floor 2
+---------------------------------------
+Time=120 ns | Reset=0 | Request=2 | Current=4 | UP=0 | DOWN=1 | DOOR=0
+Time=135 ns | Reset=0 | Request=2 | Current=3 | UP=0 | DOWN=1 | DOOR=0
+Time=145 ns | Reset=0 | Request=2 | Current=2 | UP=0 | DOWN=0 | DOOR=1
+
+---------------------------------------
+TEST 3: Floor 2 -> Floor 1
+---------------------------------------
+Time=220 ns | Reset=0 | Request=1 | Current=2 | UP=0 | DOWN=1 | DOOR=0
+Time=235 ns | Reset=0 | Request=1 | Current=1 | UP=0 | DOWN=0 | DOOR=1
+
+---------------------------------------
+TEST 4: Floor 1 -> Floor 3
+---------------------------------------
+Time=320 ns | Reset=0 | Request=3 | Current=1 | UP=1 | DOWN=0 | DOOR=0
+Time=335 ns | Reset=0 | Request=3 | Current=2 | UP=1 | DOWN=0 | DOOR=0
+Time=345 ns | Reset=0 | Request=3 | Current=3 | UP=0 | DOWN=0 | DOOR=1
+
+---------------------------------------
+TEST 5: Request Current Floor
+---------------------------------------
+Time=420 ns | Reset=0 | Request=3 | Current=3 | UP=0 | DOWN=0 | DOOR=1
+
+---------------------------------------
+ Elevator Controller Simulation Complete
+---------------------------------------
